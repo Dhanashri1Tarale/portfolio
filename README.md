@@ -22,7 +22,7 @@ An Awwwards-grade developer portfolio inspired by the minimal, high-tech aesthet
 
 1.  **Clone or Open the Folder**:
     Navigate to the project folder:
-    `C:\Users\dhana_wsgbtv3\.gemini\antigravity\scratch\luxury-portfolio`
+    
 
 2.  **Install Dependencies**:
     Run standard installations for the HTTP server:
