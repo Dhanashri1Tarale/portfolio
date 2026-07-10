@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Your Name] | Luxury Interactive Developer Portfolio</title>
+  <meta name="description" content="Awwwards-level interactive portfolio featuring premium glassmorphism, cinematic animations, living AI neural background, and real-time dashboard simulations.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body class="loading">
+  <!-- Custom Glowing Cursor -->
+  <div class="glowing-cursor" id="glowing-cursor"></div>
+  
+  <!-- Living AI Neural Network Canvas -->
+  <canvas id="neural-canvas"></canvas>
+  
+  <!-- Navigation Header -->
+  <header class="luxury-header">
+    <div class="header-container">
+      <a href="#hero" class="luxury-logo">
+        <svg viewBox="0 0 100 100" class="logo-svg">
+          <circle cx="50" cy="50" r="40" stroke="url(#logo-grad)" stroke-width="4" fill="none" />
+          <path d="M30 45 L50 30 L70 45 L50 70 Z" fill="url(#logo-grad)" opacity="0.8" />
+          <defs>
+            <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#00f2fe" />
+              <stop offset="100%" stop-color="#4facfe" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="logo-text">[YOUR LOGO]</span>
+      </a>
+      
+      <nav class="luxury-nav">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Timeline</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-primary btn-glow">Hire Creator</a>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Main Contents -->
+  <main class="luxury-container">
+    
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <div class="hero-badge reveal-fade">
+          <span class="pulse-indicator"></span>
+          <span>AVAILABLE FOR CORE COLLABORATIONS & ARCHITECTURE</span>
+        </div>
+        
+        <h1 class="hero-title reveal-text">
+          <span class="gradient-text-1">DESIGNING THE</span><br>
+          <span class="gradient-text-2">DIGITAL FRONTIER</span>
+        </h1>
+        
+        <p class="hero-subtitle reveal-fade">
+          Crafting premium web experiences and AI-driven products using next-generation software architecture. Inspired by the minimalism of Apple, the precision of Stripe, and the cognitive power of OpenAI.
+        </p>
+        
+        <div class="hero-buttons reveal-fade">
+          <a href="#projects" class="btn btn-primary btn-glow-indigo">Explore Projects</a>
+          <a href="#about" class="btn btn-secondary">Learn Philosophy</a>
+        </div>
+      </div>
+      
+      <!-- HUD Dashboard Widget -->
+      <div class="hero-hud reveal-hud">
+        <div class="hud-header">
+          <span class="hud-title">SYSTEM DIAGNOSTICS</span>
+          <span class="hud-status">ACTIVE</span>
+        </div>
+        <div class="hud-body">
+          <div class="hud-grid">
+            <div class="hud-item">
+              <span class="hud-label">COGNITIVE LATENCY</span>
+              <span class="hud-value" id="hud-latency">12ms</span>
+            </div>
+            <div class="hud-item">
+              <span class="hud-label">NETWORK THROUGHPUT</span>
+              <span class="hud-value" id="hud-throughput">84.2 Gbps</span>
+            </div>
+            <div class="hud-item">
+              <span class="hud-label">NEURAL SYNC ENGINE</span>
+              <span class="hud-value text-emerald">ONLINE</span>
+            </div>
+            <div class="hud-item">
+              <span class="hud-label">FPS VALUE</span>
+              <span class="hud-value" id="hud-fps">60.0 FPS</span>
+            </div>
+          </div>
+          
+          <div class="hud-chart-container">
+            <canvas id="hud-chart" width="300" height="60"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- About Section (Bento Grid) -->
+    <section id="about" class="about-section">
+      <div class="section-header">
+        <span class="section-tag">01 / PHILOSOPHY</span>
+        <h2 class="section-title">THE BENTO PROTOCOL</h2>
+      </div>
+      
+      <div class="bento-grid">
+        <!-- Bento Item 1: Bio -->
+        <div class="bento-card col-span-2 row-span-2 grid-card-bio">
+          <div class="bento-glow"></div>
+          <div class="bento-content">
+            <div class="bio-avatar-container">
+              <svg viewBox="0 0 100 100" class="avatar-svg">
+                <circle cx="50" cy="50" r="48" stroke="rgba(0, 242, 254, 0.3)" stroke-width="2" fill="none" />
+                <path d="M50 20 C65 20 65 45 50 45 C35 45 35 20 50 20 Z" fill="url(#avatar-grad)" />
+                <path d="M20 80 C20 60 35 55 50 55 C65 55 80 60 80 80 Z" fill="url(#avatar-grad)" opacity="0.9" />
+                <defs>
+                  <linearGradient id="avatar-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#4facfe" />
+                    <stop offset="100%" stop-color="#00f2fe" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <h3 class="bio-name">[Your Name]</h3>
+            <span class="bio-title">Principal Software Architect & Visual Engineer</span>
+            <p class="bio-desc">
+              I balance absolute performance with sensory-grade aesthetics. I develop software architectures that don't just solve problems, but tell stories through interactions, transitions, and spatial depth.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Bento Item 2: Quote/Core Belief -->
+        <div class="bento-card grid-card-quote">
+          <div class="bento-glow"></div>
+          <div class="bento-content">
+            <span class="card-icon">⚡</span>
+            <h4 class="card-title">AESTHETIC LAW</h4>
+            <p class="quote-text">
+              "Performance is the foundation of luxury. A beautiful UI that runs poorly is not a premium interface—it is a broken machine."
+            </p>
+          </div>
+        </div>
+        
+        <!-- Bento Item 3: System Specs -->
+        <div class="bento-card grid-card-specs">
+          <div class="bento-glow"></div>
+          <div class="bento-content">
+            <h4 class="card-title">DEV SPECIFICATIONS</h4>
+            <ul class="specs-list">
+              <li><span>CHASSIS</span> <span>Apple M3 Max 16-Core</span></li>
+              <li><span>MONITORS</span> <span>Studio Display XDR</span></li>
+              <li><span>EDITOR</span> <span>VS Code Custom Theme</span></li>
+              <li><span>KEYBOARD</span> <span>Split Ortholinear (Linear)</span></li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Bento Item 4: Interactive Terminal -->
+        <div class="bento-card col-span-2 grid-card-terminal">
+          <div class="bento-glow"></div>
+          <div class="bento-content terminal-widget">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="terminal-title">neural_shell.sh - [Your Name]</span>
+            </div>
+            <div class="terminal-body" id="terminal-body">
+              <div class="terminal-line"><span class="text-indigo">system:</span> Initializing neural matrix connection... done.</div>
+              <div class="terminal-line"><span class="text-indigo">system:</span> Type <span class="text-cyan">/help</span> to see available telemetry commands.</div>
+              <div class="terminal-input-container">
+                <span class="terminal-prompt">&gt;</span>
+                <input type="text" id="terminal-input" placeholder="Type command here..." autofocus autocomplete="off">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="section-header">
+        <span class="section-tag">02 / EXPERTISE</span>
+        <h2 class="section-title">THE ENGINE ROOM</h2>
+      </div>
+      
+      <div class="skills-layout">
+        <!-- Circular Telemetry Dials -->
+        <div class="skills-panel glass-panel">
+          <h3 class="panel-title">SYSTEM COMPILATION METRICS</h3>
+          <div class="skills-dials">
+            <!-- Dial 1 -->
+            <div class="dial-wrapper" data-skill="Frontend Systems" data-percentage="98">
+              <div class="dial-svg-container">
+                <svg class="circular-chart cyan" viewBox="0 0 36 36">
+                  <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                  <path class="circle" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                </svg>
+                <div class="dial-label-overlay">
+                  <span class="dial-value">0%</span>
+                </div>
+              </div>
+              <span class="dial-name">Frontend Architecture</span>
+            </div>
+            
+            <!-- Dial 2 -->
+            <div class="dial-wrapper" data-skill="Backend Services" data-percentage="92">
+              <div class="dial-svg-container">
+                <svg class="circular-chart indigo" viewBox="0 0 36 36">
+                  <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                  <path class="circle" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                </svg>
+                <div class="dial-label-overlay">
+                  <span class="dial-value">0%</span>
+                </div>
+              </div>
+              <span class="dial-name">Backend Infrastructure</span>
+            </div>
+            
+            <!-- Dial 3 -->
+            <div class="dial-wrapper" data-skill="Machine Learning" data-percentage="88">
+              <div class="dial-svg-container">
+                <svg class="circular-chart emerald" viewBox="0 0 36 36">
+                  <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                  <path class="circle" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                </svg>
+                <div class="dial-label-overlay">
+                  <span class="dial-value">0%</span>
+                </div>
+              </div>
+              <span class="dial-name">AI / Neural Engineering</span>
+            </div>
+            
+            <!-- Dial 4 -->
+            <div class="dial-wrapper" data-skill="Performance Optimization" data-percentage="95">
+              <div class="dial-svg-container">
+                <svg class="circular-chart amber" viewBox="0 0 36 36">
+                  <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                  <path class="circle" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                </svg>
+                <div class="dial-label-overlay">
+                  <span class="dial-value">0%</span>
+                </div>
+              </div>
+              <span class="dial-name">Systems Perf / Wasm</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Skill Matrix Cards -->
+        <div class="skills-grid">
+          <div class="skill-card-group glass-panel">
+            <h4 class="skill-group-title text-cyan">SYNTAX & LANGUAGES</h4>
+            <div class="skill-tags">
+              <span class="skill-tag-item">TypeScript</span>
+              <span class="skill-tag-item">Rust</span>
+              <span class="skill-tag-item">Go</span>
+              <span class="skill-tag-item">Python</span>
+              <span class="skill-tag-item">C++</span>
+              <span class="skill-tag-item">WebAssembly</span>
+            </div>
+          </div>
+          
+          <div class="skill-card-group glass-panel">
+            <h4 class="skill-group-title text-indigo">ENVIRONMENTS & LAYERS</h4>
+            <div class="skill-tags">
+              <span class="skill-tag-item">Next.js / React</span>
+              <span class="skill-tag-item">Node / Bun</span>
+              <span class="skill-tag-item">Kubernetes</span>
+              <span class="skill-tag-item">Docker</span>
+              <span class="skill-tag-item">AWS / GCP</span>
+              <span class="skill-tag-item">GraphQL</span>
+            </div>
+          </div>
+          
+          <div class="skill-card-group glass-panel">
+            <h4 class="skill-group-title text-emerald">DATA ENGINE</h4>
+            <div class="skill-tags">
+              <span class="skill-tag-item">PostgreSQL</span>
+              <span class="skill-tag-item">Redis</span>
+              <span class="skill-tag-item">MongoDB</span>
+              <span class="skill-tag-item">Pinecone (Vector DB)</span>
+              <span class="skill-tag-item">ClickHouse</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="section-header">
+        <span class="section-tag">03 / PORTFOLIO</span>
+        <h2 class="section-title">ACTIVE LAB EXPERIMENTS</h2>
+      </div>
+      
+      <div class="projects-grid" id="projects-grid">
+        <!-- Projects will be generated dynamically by projects.js -->
+      </div>
+    </section>
+    
+    <!-- Timeline (Achievements & Education) -->
+    <section id="achievements" class="timeline-section">
+      <div class="section-header">
+        <span class="section-tag">04 / LOGS</span>
+        <h2 class="section-title">CHRONOLOGICAL PIPELINE</h2>
+      </div>
+      
+      <div class="timeline-wrapper">
+        <div class="timeline-line-indicator">
+          <div class="timeline-progress" id="timeline-progress-bar"></div>
+        </div>
+        
+        <div class="timeline-nodes-container">
+          <!-- Milestone 1 -->
+          <div class="timeline-item reveal-slide" data-year="2025">
+            <div class="timeline-point"></div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-meta">
+                <span class="timeline-year">2025 - PRESENT</span>
+                <span class="timeline-type">CORE ARCHITECTURE</span>
+              </div>
+              <h3 class="timeline-title">Lead Infrastructure Engineer | [Company / Studio]</h3>
+              <p class="timeline-desc">
+                Architected high-throughput AI orchestration pipelines, improving service latency by 45%. Designed and coordinated hybrid microservice clusters across multi-cloud regions.
+              </p>
+              <div class="timeline-details-hud">
+                <span>METRIC: 99.999% Uptime</span>
+                <span>SYSTEMS: Go / Kubernetes / gRPC</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Milestone 2 -->
+          <div class="timeline-item reveal-slide" data-year="2023">
+            <div class="timeline-point"></div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-meta">
+                <span class="timeline-year">2023 - 2025</span>
+                <span class="timeline-type">FULL STACK DEVELOPER</span>
+              </div>
+              <h3 class="timeline-title">Senior Full-Stack Architect | [Agency / Brand]</h3>
+              <p class="timeline-desc">
+                Crafted high-fidelity graphical user interfaces for financial forecasting tools. Standardized premium client libraries using Stripe design patterns.
+              </p>
+              <div class="timeline-details-hud">
+                <span>METRIC: 10M+ Monthly Actions</span>
+                <span>SYSTEMS: TypeScript / Rust / NextJS</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Milestone 3 -->
+          <div class="timeline-item reveal-slide" data-year="2021">
+            <div class="timeline-point"></div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-meta">
+                <span class="timeline-year">2019 - 2023</span>
+                <span class="timeline-type">EDUCATION</span>
+              </div>
+              <h3 class="timeline-title">B.S. Computer Science & Artificial Intelligence | [University Name]</h3>
+              <p class="timeline-desc">
+                Graduated with honors. Focused on machine learning theories, complex systems analysis, and graphics rendering technologies.
+              </p>
+              <div class="timeline-details-hud">
+                <span>GRADE: 3.92 GPA</span>
+                <span>THESIS: Realtime Shader Networks</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="section-header">
+        <span class="section-tag">05 / COMMS</span>
+        <h2 class="section-title">SECURE LINK PROTOCOL</h2>
+      </div>
+      
+      <div class="contact-grid">
+        <!-- Contact Details Info -->
+        <div class="contact-info glass-panel reveal-fade">
+          <h3 class="contact-info-title">NEURAL CONNECTIVITY</h3>
+          <p class="contact-info-desc">
+            Initiate a secure communication packet. Ready to discuss architectural roles, design consultation, or technical product development.
+          </p>
+          
+          <div class="contact-channels">
+            <div class="channel-item">
+              <span class="channel-label">ENCRYPTED MAIL</span>
+              <a href="mailto:placeholder@yourdomain.com" class="channel-value">placeholder@yourdomain.com</a>
+            </div>
+            <div class="channel-item">
+              <span class="channel-label">SECURE HANDSHAKE</span>
+              <a href="https://github.com/placeholder" target="_blank" rel="noopener" class="channel-value">github.com/[placeholder]</a>
+            </div>
+            <div class="channel-item">
+              <span class="channel-label">SYNAPSE LOGS</span>
+              <a href="https://linkedin.com/in/placeholder" target="_blank" rel="noopener" class="channel-value">linkedin.com/in/[placeholder]</a>
+            </div>
+          </div>
+          
+          <!-- Uptime Simulation HUD -->
+          <div class="contact-status-hud">
+            <span class="status-marker green"></span>
+            <span>SECURE HANDSHAKE: INCOMING CHANNELS SYNCHRONIZED</span>
+          </div>
+        </div>
+        
+        <!-- Contact Form Terminal -->
+        <div class="contact-form-container glass-panel reveal-fade">
+          <form id="contact-form" class="comms-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="comms-name" class="form-label">IDENTITY / NAME</label>
+                <input type="text" id="comms-name" name="name" class="form-input" placeholder="e.g. Satoshi Nakamoto" required>
+              </div>
+              <div class="form-group">
+                <label for="comms-email" class="form-label">DIGITAL CORRESPONDENCE / EMAIL</label>
+                <input type="email" id="comms-email" name="email" class="form-input" placeholder="e.g. name@address.com" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="comms-subject" class="form-label">TRANSMISSION HEADER / SUBJECT</label>
+              <input type="text" id="comms-subject" name="subject" class="form-input" placeholder="e.g. Infrastructure Consulting" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="comms-message" class="form-label">PACKET CONTENTS / MESSAGE</label>
+              <textarea id="comms-message" name="message" class="form-input" rows="6" placeholder="Construct message payload here..." required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-glow btn-block" id="form-submit-btn">
+              <span class="btn-text">TRANSMIT PACKET</span>
+              <svg viewBox="0 0 24 24" class="btn-icon">
+                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" fill="currentColor"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="luxury-footer">
+    <div class="footer-container">
+      <p class="copyright">&copy; 2026 [YOUR NAME]. ALL RIGHTS RESERVED. SECURE SESSION PROTOCOL ACTIVE.</p>
+      <div class="footer-meta">
+        <span>LATENCY: <span id="footer-latency">--</span></span>
+        <span>|</span>
+        <span>SYS LOG: SEC_OK</span>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Overlay Screen for project expansion -->
+  <div class="project-modal" id="project-modal">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-window glass-panel" id="modal-window">
+      <button class="modal-close-btn" id="modal-close-btn">
+        <svg viewBox="0 0 24 24">
+          <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill="currentColor"/>
+        </svg>
+      </button>
+      <div class="modal-body" id="modal-body">
+        <!-- Content injected dynamically -->
+      </div>
+    </div>
+  </div>
+  
+  <!-- JS files -->
+  <script src="projects.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
